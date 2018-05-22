@@ -61,7 +61,7 @@ public class lertexto {
 		try (BufferedReader reader = new BufferedReader(Files.newBufferedReader(path1, Charset.forName("utf8")))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
-				line = line.toLowerCase().replaceAll("[^a-zA-Z0123456789áéíóúÁÉÍÓÚÃãÃêÊçÇôõÕÔâÂàÀ -]", " ");
+				line = line.toLowerCase().replaceAll("[^a-zA-Z0123456789ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-]", " ");
 				String[] palavras = line.split(" ");
 				for (String pal : palavras) {
 					if (pal != null && !pal.equals(""))

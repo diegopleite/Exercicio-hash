@@ -14,13 +14,13 @@ public class app {
 		int aux = 0;
 		System.out.println(
 				"Bonus, Defina uma lista de stopwords e retire-as antes de inserir nas estruturas escolhidas.");
-		System.out.println("Digite o número de stopwords que você deseja");
+		System.out.println("Digite o n?mero de stopwords que voc? deseja");
 		int a9;
 		String a10;
 		ArrayList<String> stopword = new ArrayList<String>();
 		a9 = aa.nextInt();
 		for (int i = 0; i < a9; i++) {
-			System.out.println("Digite a " + (i + 1) + "ª" + " palavra");
+			System.out.println("Digite a " + (i + 1) + "?" + " palavra");
 			a10 = a.nextLine();
 			a10 = a10.toLowerCase();
 			stopword.add(a10);
@@ -30,9 +30,9 @@ public class app {
 		//for (int i =1;i<11;i++) {
 		//	System.out.println("Texto "+i+": "+listas.listartodas(i));
 	//	}
-		System.out.println("Qual o número da questão que você quer fazer?");
+		System.out.println("Qual o n?mero da quest?o que voc? quer fazer?");
 		System.out.println("1)Dada uma palavra qualquer, em quais arquivos esta palavra aparece?\r\n"
-				+ "2)Dadas duas palavras quaisquer, quais são os arquivos que contém as duas palavras? E três palavras?\r\n"
+				+ "2)Dadas duas palavras quaisquer, quais s?o os arquivos que cont?m as duas palavras? E tr?s palavras?\r\n"
 				+ "3)Dado um arquivo qualquer mostrar quais as palavras que aparecem neste arquivo com suas frequencias.\r\n"
 				+ "4)Dados dois arquivos, quais as palavras que aparecem em ambos os arquivos?");
 		String a0;
@@ -55,13 +55,13 @@ public class app {
 
 			}
 			if (aux == 0) {
-				System.out.println("Palavra não encontrada em nenhum texto");
+				System.out.println("Palavra n?o encontrada em nenhum texto");
 			}
 		}
 
 		if (a0.equals("2")) {
 			System.out.print(
-					"2) Dadas duas palavras quaisquer, quais são os arquivos que contém as duas palavras? E três palavras?\n Quantas palavras você vai usar? 2 ou 3?:\n");
+					"2) Dadas duas palavras quaisquer, quais s?o os arquivos que cont?m as duas palavras? E tr?s palavras?\n Quantas palavras voc? vai usar? 2 ou 3?:\n");
 			String a2;
 			a2 = a.nextLine();
 			if (a2.equals("2")) {
@@ -75,7 +75,7 @@ public class app {
 				a4 = a4.toLowerCase();
 				for (int j = 1; j < 11; j++) {
 					if (listas.procurasetem(a3, j) == true && listas.procurasetem(a4, j) == true) {
-						System.out.println("O arquivo " + j + " contém as 2 palavras");
+						System.out.println("O arquivo " + j + " cont?m as 2 palavras");
 						aux = aux + 1;
 					}
 				}
@@ -96,20 +96,20 @@ public class app {
 				for (int j = 1; j < 11; j++) {
 					if (listas.procurasetem(a3, j) == true && listas.procurasetem(a4, j) == true
 							&& listas.procurasetem(a5, j) == true) {
-						System.out.println("O arquivo " + j + " contém as 3 palavras");
+						System.out.println("O arquivo " + j + " cont?m as 3 palavras");
 						aux = aux + 1;
 					}
 				}
 			}
 			if (aux == 0) {
-				System.out.println("Nenhum texto contém as palavras simultaneamente");
+				System.out.println("Nenhum texto cont?m as palavras simultaneamente");
 			}
 		}
 
 		if (a0.equals("3")) {
 			System.out.println(
 					"3) Dado um arquivo qualquer mostrar quais as palavras que aparecem neste arquivo com suas frequencias.");
-			System.out.println("Digite qual arquivo você quer");
+			System.out.println("Digite qual arquivo voc? quer");
 			int a6;
 			a6 = aa.nextInt();
 			System.out.println("No texto " + a6);
@@ -121,10 +121,10 @@ public class app {
 		}
 		if (a0.equals("4")) {
 			System.out.println("4) Dados dois arquivos, quais as palavras que aparecem em ambos os arquivos?");
-			System.out.println("Digite o número do primeiro arquivo:");
+			System.out.println("Digite o n?mero do primeiro arquivo:");
 			int a7;
 			a7 = aa.nextInt();
-			System.out.println("Digite o número do segundo arquivo:");
+			System.out.println("Digite o n?mero do segundo arquivo:");
 			int a8;
 			a8 = aa.nextInt();
 			listas.temnos2(a7, a8);

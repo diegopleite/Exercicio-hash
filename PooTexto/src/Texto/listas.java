@@ -26,8 +26,7 @@ public class listas {
 	public static void adicionalista(String a, int b) {
 		
 		if (b==1) {
-			
-			
+
 			texto1.add(a);
 		}
 		if (b == 2) {
@@ -62,8 +61,8 @@ public class listas {
 public static void adicionaporindex(int index,String a, int b) {
 		
 		if (b==1) {
-			
-			
+
+
 			texto1.add(index, a);
 		}
 		if (b == 2) {
